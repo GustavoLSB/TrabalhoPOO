@@ -238,6 +238,7 @@ header>nav {
 }
 
 
+
 /* ============== PELUCIAS ============== */
 
 .titulo-pelucias {
@@ -281,17 +282,18 @@ header>nav {
 .carousel-snap-container {
     display: flex;
     overflow-x: hidden;
-    /* Evita scroll extra no início */
     scroll-snap-type: x mandatory;
     justify-content: flex-start;
-    /* Mantém os itens alinhados à esquerda */
     padding-left: 0;
     /* Remove deslocamento no primeiro card */
-
 }
 
 /* Estilização dos cards */
 .card {
+    max-width: 20rem;
+    /* Ajusta a largura do card */
+    height: 500px;
+    /* Define uma altura fixa */
     width: 25rem;
     height: 570px;
     border: none;
@@ -299,6 +301,38 @@ header>nav {
     padding: 20px;
     text-align: center;
 }
+
+
+
+
+
+.carousel-snap-container {
+    overflow: visible;
+    /* Permite que os cards apareçam completamente */
+    display: flex;
+    justify-content: flex-start;
+}
+
+.carousel-wrapper {
+    overflow-x: hidden;
+}
+
+.card {
+    max-width: 20rem;
+    /* Ajusta a largura do card */
+    height: 500px;
+    /* Define uma altura fixa */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Faz o efeito de aumento ser mais sutil */
+}
+
+
+
+
 
 /* Ajuste para imagens */
 .card img {
