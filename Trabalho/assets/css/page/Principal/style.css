@@ -17,7 +17,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     margin: 10px auto 0 auto;
-    padding: 20px;
+    padding: 10px;
     border-radius: 100px;
     border: 1px solid black;
     background-color: white;
@@ -246,18 +246,17 @@ header>nav {
     margin-bottom: 40px;
 }
 
-.titulo-pelucias >h2 {
-    font-weight: 600 ;
+.titulo-pelucias>h2 {
+    font-weight: 600;
     margin-top: 20px;
 }
 
-.titulo-pelucias >i {
+.titulo-pelucias>i {
     font-size: 30px;
     color: #4A3333;
     margin-left: 10px;
     margin-right: 10px;
 }
-
 
 /* Estilos gerais */
 .pelucias {
@@ -281,10 +280,13 @@ header>nav {
 /* Configuração do carrossel */
 .carousel-snap-container {
     display: flex;
-    overflow-x: hidden; /* Evita scroll extra no início */
+    overflow-x: hidden;
+    /* Evita scroll extra no início */
     scroll-snap-type: x mandatory;
-    justify-content: flex-start; /* Mantém os itens alinhados à esquerda */
-    padding-left: 0; /* Remove deslocamento no primeiro card */
+    justify-content: flex-start;
+    /* Mantém os itens alinhados à esquerda */
+    padding-left: 0;
+    /* Remove deslocamento no primeiro card */
 
 }
 
@@ -296,15 +298,22 @@ header>nav {
     border-radius: 100px;
     padding: 20px;
     text-align: center;
-    
 }
-
 
 /* Ajuste para imagens */
 .card img {
     width: 100%;
     height: auto;
     object-fit: contain;
+}
+
+.card-title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 25px;
 }
 
 /* Botões */
@@ -315,7 +324,7 @@ header>nav {
     border: none;
 }
 
-.carousel-buttons > button {
+.carousel-buttons>button {
     background-color: #4A3333;
     color: white;
     border: #4A3333 solid 1px;
@@ -326,10 +335,10 @@ header>nav {
     font-size: 18px;
 }
 
-.carousel-buttons > button:hover {
+.carousel-buttons>button:hover {
     background-color: #ffffff;
     color: #4A3333;
-    border:  #4A3333 solid 1px;;
+    border: #4A3333 solid 1px;
     padding: 10px 20px;
     margin: 20px 10px;
     border-radius: 5px;
@@ -337,18 +346,30 @@ header>nav {
     font-size: 18px;
 }
 
-.btn-primary {
-    padding: 10px 30px;
+
+#btn-comprar {
+    padding: 10px 20px;
+    border: #4a3333 solid 2px;
     background-color: #4A3333;
-    border: none;
-    font-size: 20px;
     cursor: pointer;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+#btn-comprar:hover {
+    padding: 10px 20px;
+    border: #4a3333 solid 2px;
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #4A3333;
+    font-weight: 600;
 }
 
 .card img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Isso ajusta o tamanho da imagem sem cortes */
+    object-fit: cover;
+    /* Isso ajusta o tamanho da imagem sem cortes */
 }
 
 
