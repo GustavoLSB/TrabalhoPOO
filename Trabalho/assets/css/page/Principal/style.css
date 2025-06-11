@@ -163,7 +163,7 @@ header>nav {
 
 }
 
-.conteudo-capa>button {
+.btn-ver-agora {
     font-size: 15px;
     width: 120px;
     height: 50px;
@@ -176,7 +176,7 @@ header>nav {
     transition: all 0.2s ease;
 }
 
-.conteudo-capa>button:hover {
+.btn-ver-agora:hover {
     cursor: pointer;
     font-size: 15px;
     width: 120px;
@@ -272,6 +272,7 @@ header>nav {
 
 /* Container do carrossel */
 .carousel-wrapper {
+    height: 80%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -330,6 +331,31 @@ header>nav {
     /* Faz o efeito de aumento ser mais sutil */
 }
 
+.carousel-snap-container {
+    overflow: visible;
+    /* Permite que os cards apareçam completamente */
+    display: flex;
+    justify-content: flex-start;
+}
+
+.carousel-wrapper {
+    overflow-x: hidden;
+}
+
+.card img {
+    max-width: 20rem;
+    /* Ajusta a largura do card */
+    height: 500px;
+    /* Define uma altura fixa */
+    transition: transform 0.3s ease;
+    overflow: visible;
+}
+
+.card img:hover {
+    transform: scale(1.13);
+    overflow: visible;
+    /* Faz o efeito de aumento ser mais sutil */
+}
 
 
 
@@ -379,7 +405,6 @@ header>nav {
     cursor: pointer;
     font-size: 18px;
 }
-
 
 #btn-comprar {
     padding: 10px 20px;

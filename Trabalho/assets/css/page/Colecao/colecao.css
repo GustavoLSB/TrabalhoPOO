@@ -148,3 +148,162 @@ header>nav {
 .carousel-indicators {
     color: #000;
 }
+
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #f5efe7;
+}
+
+.conteudo-sobre>h1 {
+    color: #4A3333;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.sobre-titulo {
+    font-size: 25px;
+    color: #4A3333;
+    font-weight: 600;
+}
+
+.sobre-coluna {
+    color: #4A3333;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.coluna2 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.coluna1 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.coluna>div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.coluna>div>h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.coluna>p {
+    font-size: 17px;
+    font-weight: 550;
+    color: #4A3333;
+    margin-bottom: 100px;
+}
+
+/*============== FOOTER ==============*/
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.conteudo-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.midias {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 3px 0 0 0;
+}
+
+.logo-footer>h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #4A3333;
+    margin-left: 5px;
+}
+
+.logo-footer>i {
+    font-size: 30px;
+    padding: 10px;
+    color: #4A3333;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.midias-footer>a>i {
+    font-size: 25px;
+    color: rgb(124, 124, 124);
+}
+
+.midias-footer>a>i:hover {
+    font-size: 25px;
+    color: rgb(90, 90, 90);
+    transition: 0.2s;
+}
+
+.midias-footer a {
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+    margin-right: 20px;
+}
+
+.midias-footer a:hover {
+    color: #4A3333;
+}
+
+.notas {
+    display: flex;
+    gap: 100px;
+    margin-right: 200px;
+}
+
+.notas-coluna>h4 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+.texto-coluna {
+    font-size: 15px;
+    color: rgb(124, 124, 124);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.texto-coluna>p {
+    margin-bottom: 25px;
+
+}
+
+.texto-coluna:hover {
+    font-size: 15px;
+    color: darkgray;
+    text-decoration: underline;
+}

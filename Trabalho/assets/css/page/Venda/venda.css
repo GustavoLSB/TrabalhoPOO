@@ -275,7 +275,13 @@ header>nav {
     color: #fff;
 }
 
-.description {
+.description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description-content {
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -283,7 +289,7 @@ header>nav {
     border: 1px solid #4A3333;;
     border-radius: 50px;
     width: 1219px;
-    margin-left: 350px;
+   
 }
 
 .description-texto {
