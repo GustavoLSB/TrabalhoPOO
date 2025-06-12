@@ -18,43 +18,6 @@
         crossorigin="anonymous"></script>
 </head>
 
-<script>
-    const priceEl = document.querySelector('.price');
-    const sizeSelect = document.getElementById('size');
-    const inputQty = document.getElementById('counter');
-    const btnMinus = document.getElementById('btn-minus');
-    const btnPlus = document.getElementById('btn-plus');
-    const priceMap = {
-        small: 89.90,
-        medium: 99.90,
-        large: 110.00
-    };
-    function formatBRL(value) {
-        return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    }
-    function updateTotal() {
-        const size = sizeSelect.value;
-        const unitPrice = priceMap[size];
-        const quantity = parseInt(inputQty.value);
-        const total = unitPrice * quantity;
-        priceEl.textContent = formatBRL(total);
-    }
-    btnMinus.addEventListener('click', () => {
-        let qty = parseInt(inputQty.value);
-        if (qty > 1) {
-            inputQty.value = qty - 1;
-            updateTotal();
-        }
-    });
-    btnPlus.addEventListener('click', () => {
-        let qty = parseInt(inputQty.value);
-        inputQty.value = qty + 1;
-        updateTotal();
-    });
-    sizeSelect.addEventListener('change', updateTotal);
-    updateTotal();
-</script>
-
 
 <body>
 
@@ -126,6 +89,85 @@
         </div>
     </section>
 
+    <section class="colecao-3" id="colecao-3">
+
+        <div class="fundo-pelucias">
+
+            <section class="pelucias" id="pelucias">
+
+                <div class="titulo-pelucias">
+                    <i id="icone-cole-3" class="fa-solid fa-bag-shopping"></i>
+                    <h2 id="Titulo-cole-3">Pelúcias</h2>
+                </div>
+
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="carousel-track">
+                        <!-- Card 1 -->
+                        <div class="card" style="border-radius: 30px; border: none;">
+                            <img src="assets/css/global/Pelucias/Urso-Pelucia.png" alt="Urso Pelúcia">
+                            <div class="card-body">
+                                <h5 class="card-title">Pelúcia Urso</h5>
+                                <p class="card-text">R$ 89,90</p>
+                                <a href="#" class="btn btn-primary"
+                                    style="padding: 10px 20px; border: none; background-color: #4A3333;font-weight: 500;">Comprar</a>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="card" style="border-radius: 30px; border: none;">
+                            <img src="assets/css/global/Pelucias/Panda-Pelucia.png" alt="Panda Pelúcia">
+                            <div class="card-body">
+                                <h5 class="card-title">Pelúcia Panda</h5>
+                                <p class="card-text">R$ 89,90</p>
+                                <a href="#" class="btn btn-primary"
+                                    style="padding: 10px 20px; border: none; background-color: #4A3333;font-weight: 500;">Comprar</a>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="card" style="border-radius: 30px; border: none;">
+                            <img src="assets/css/global/Pelucias/Leao-Pelucia.png" alt="Leão Pelúcia">
+                            <div class="card-body">
+                                <h5 class="card-title">Pelúcia Leão</h5>
+                                <p class="card-text">R$ 89,90</p>
+                                <a href="#" class="btn btn-primary"
+                                    style="padding: 10px 20px; border: none; background-color: #4A3333;font-weight: 500;">Comprar</a>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="card" style="border-radius: 30px; border: none;">
+                            <img src="assets/css/global/Pelucias/Coelho-Pelucia.png" alt="Coelho Pelúcia">
+                            <div class="card-body">
+                                <h5 class="card-title">Pelúcia Coelho</h5>
+                                <p class="card-text">R$ 89,90</p>
+                                <a href="#" class="btn btn-primary"
+                                    style="padding: 10px 20px; border: none; background-color: #4A3333;font-weight: 500;">Comprar</a>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="card" style="border-radius: 30px; border: none;">
+                            <img src="assets/css/global/Pelucias/Dinossauro-Pelucia.png" alt="Dinossauro Pelúcia">
+                            <div class="card-body">
+                                <h5 class="card-title">Pelúcia Dinossauro</h5>
+                                <p class="card-text">R$ 89,90</p>
+                                <a href="#" class="btn btn-primary"
+                                    style="padding: 10px 20px; border: none; background-color: #4A3333;font-weight: 500;">Comprar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="carousel-buttons" style="gap: 20px;">
+                    <button id="btn-prev" class="btn btn-primary">&#8249; Anterior</button>
+                    <button id="btn-next" class="btn btn-primary">Próximo &#8250;</button>
+                </div>
+            </section>
+        </div>
+    </section>
+
     <section class="sobre">
 
         <div class="conteudo-sobre">
@@ -173,6 +215,7 @@
         </div>
 
     </section>
+
 
     <footer>
 
@@ -247,5 +290,42 @@
         </div>
 
     </footer>
+
+    <script>
+        const priceEl = document.querySelector('.price');
+        const sizeSelect = document.getElementById('size');
+        const inputQty = document.getElementById('counter');
+        const btnMinus = document.getElementById('btn-minus');
+        const btnPlus = document.getElementById('btn-plus');
+        const priceMap = {
+            small: 89.90,
+            medium: 99.90,
+            large: 110.00
+        };
+        function formatBRL(value) {
+            return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        }
+        function updateTotal() {
+            const size = sizeSelect.value;
+            const unitPrice = priceMap[size];
+            const quantity = parseInt(inputQty.value);
+            const total = unitPrice * quantity;
+            priceEl.textContent = formatBRL(total);
+        }
+        btnMinus.addEventListener('click', () => {
+            let qty = parseInt(inputQty.value);
+            if (qty > 1) {
+                inputQty.value = qty - 1;
+                updateTotal();
+            }
+        });
+        btnPlus.addEventListener('click', () => {
+            let qty = parseInt(inputQty.value);
+            inputQty.value = qty + 1;
+            updateTotal();
+        });
+        sizeSelect.addEventListener('change', updateTotal);
+        updateTotal();
+    </script>
 
 </body>
