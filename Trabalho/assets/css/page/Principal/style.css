@@ -238,7 +238,6 @@ header>nav {
 }
 
 
-
 /* ============== PELUCIAS ============== */
 
 .titulo-pelucias {
@@ -250,6 +249,7 @@ header>nav {
 .titulo-pelucias>h2 {
     font-weight: 600;
     margin-top: 20px;
+    color: #4A3333;
 }
 
 .titulo-pelucias>i {
@@ -259,108 +259,51 @@ header>nav {
     margin-right: 10px;
 }
 
-/* Estilos gerais */
-.pelucias {
-    padding: 100px;
-    height: 100vh;
-    width: 100%;
+.fundo-pelucias {
     background-image: url('image/Cards.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/* Container do carrossel */
+.pelucias {
+    padding: 50px;
+    padding-top: 70px;
+    height: 100vh;
+    width: 100%;
+}
+
 .carousel-wrapper {
-    height: 80%;
-    overflow: hidden;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
+    overflow: hidden;
 }
 
-/* Configuração do carrossel */
-.carousel-snap-container {
+.carousel-container {
+    width: 2050px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+}
+
+.carousel-track {
     display: flex;
-    overflow-x: hidden;
-    scroll-snap-type: x mandatory;
-    justify-content: flex-start;
-    padding-left: 0;
-    /* Remove deslocamento no primeiro card */
+    transition: transform 0.5s ease;
 }
 
-/* Estilização dos cards */
 .card {
-    max-width: 20rem;
-    /* Ajusta a largura do card */
-    height: 500px;
-    /* Define uma altura fixa */
-    width: 25rem;
+    width: 21rem;
     height: 570px;
     border: none;
     border-radius: 100px;
     padding: 20px;
     text-align: center;
+    margin-right: 10px;
+    flex: 0 0 auto;
 }
 
-
-
-
-
-.carousel-snap-container {
-    overflow: visible;
-    /* Permite que os cards apareçam completamente */
-    display: flex;
-    justify-content: flex-start;
-}
-
-.carousel-wrapper {
-    overflow-x: hidden;
-}
-
-.card {
-    max-width: 20rem;
-    /* Ajusta a largura do card */
-    height: 500px;
-    /* Define uma altura fixa */
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    /* Faz o efeito de aumento ser mais sutil */
-}
-
-.carousel-snap-container {
-    overflow: visible;
-    /* Permite que os cards apareçam completamente */
-    display: flex;
-    justify-content: flex-start;
-}
-
-.carousel-wrapper {
-    overflow-x: hidden;
-}
-
-.card img {
-    max-width: 20rem;
-    /* Ajusta a largura do card */
-    height: 500px;
-    /* Define uma altura fixa */
-    transition: transform 0.3s ease;
-    overflow: visible;
-}
-
-.card img:hover {
-    transform: scale(1.13);
-    overflow: visible;
-    /* Faz o efeito de aumento ser mais sutil */
-}
-
-
-
-
-/* Ajuste para imagens */
 .card img {
     width: 100%;
     height: auto;
@@ -376,7 +319,6 @@ header>nav {
     font-size: 25px;
 }
 
-/* Botões */
 .carousel-buttons {
     display: flex;
     justify-content: center;
@@ -387,7 +329,7 @@ header>nav {
 .carousel-buttons>button {
     background-color: #4A3333;
     color: white;
-    border: #4A3333 solid 1px;
+    border: #4A3333 solid 2px;
     padding: 10px 20px;
     margin: 20px 10px;
     border-radius: 5px;
@@ -398,12 +340,20 @@ header>nav {
 .carousel-buttons>button:hover {
     background-color: #ffffff;
     color: #4A3333;
-    border: #4A3333 solid 1px;
+    border: #4A3333 solid 2px;
     padding: 10px 20px;
     margin: 20px 10px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
+}
+
+.carousel-buttons :active {
+    background-color: #ffffff !important;
+    border: #4A3333 solid 2px !important;
+    color: #4A3333 !important;
+    outline: none;
+    box-shadow: none;
 }
 
 #btn-comprar {
@@ -428,8 +378,8 @@ header>nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Isso ajusta o tamanho da imagem sem cortes */
 }
+
 
 
 /* ============== SOBRE ============== */

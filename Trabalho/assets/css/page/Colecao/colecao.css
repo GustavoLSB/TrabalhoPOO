@@ -129,7 +129,7 @@ header>nav {
     font-weight: 600;
 }
 
-/* ============== De ============== */
+/* ============== CARROSEL ============== */
 
 .carousel-control-prev-icon {
     margin-right: 150px;
@@ -208,6 +208,185 @@ header>nav {
     font-weight: 550;
     color: #4A3333;
     margin-bottom: 100px;
+}
+
+/* ============== PELUCIAS ============== */
+
+.colecao-1 {
+    height: 83vh;
+    width: 100%;
+    background-image: url('image/TelaColecao1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.colecao-2 {
+    height: 83vh;
+    width: 100%;
+    background-image: url('image/TelaColecao2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.colecao-3 {
+    height: 83vh;
+    width: 100%;
+    background-image: url('image/TelaColecao3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.titulo-pelucias {
+    display: flex;
+    align-items: center;
+}
+
+.titulo-pelucias>h2 {
+    font-weight: 600;
+    margin-top: 20px;
+    color: #4A3333;
+    
+}
+
+#Titulo-cole-3 {
+    color: #fff;
+    font-weight: 500;
+    
+}
+
+#icone-cole-3 {
+    color: #fff;
+}
+
+.titulo-pelucias>i {
+    font-size: 30px;
+    color: #4A3333;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fundo-pelucias {
+    background-image: url('image/Cards.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pelucias {
+    padding: 50px;
+    padding-top: 70px;
+    height: 100vh;
+    width: 100%;
+}
+
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.carousel-container {
+    width: 2050px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.card {
+    width: 21rem;
+    height: 570px;
+    border: none;
+    border-radius: 100px;
+    padding: 20px;
+    text-align: center;
+    margin-right: 10px;
+    flex: 0 0 auto;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.card-title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 25px;
+}
+
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border: none;
+}
+
+.carousel-buttons>button {
+    background-color: #4A3333;
+    color: white;
+    border: #4A3333 solid 2px;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.carousel-buttons>button:hover {
+    background-color: #ffffff;
+    color: #4A3333;
+    border: #4A3333 solid 2px;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.carousel-buttons :active {
+    background-color: #ffffff !important;
+    border: #4A3333 solid 2px !important;
+    color: #4A3333 !important;
+    outline: none;
+    box-shadow: none;
+}
+
+#btn-comprar {
+    padding: 10px 20px;
+    border: #4a3333 solid 2px;
+    background-color: #4A3333;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+#btn-comprar:hover {
+    padding: 10px 20px;
+    border: #4a3333 solid 2px;
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #4A3333;
+    font-weight: 600;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /*============== FOOTER ==============*/
