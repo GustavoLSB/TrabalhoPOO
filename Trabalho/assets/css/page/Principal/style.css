@@ -60,6 +60,7 @@ header>nav {
     margin-left: 20px;
 }
 
+
 .navbar-texto {
     display: flex;
     align-items: center;
@@ -107,6 +108,37 @@ header>nav {
     border: #4a3333 solid 2px;
     border-radius: 40px;
     transition: all 0.2s ease;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+#user-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    color: #4A3333;
+    border-radius: 100px;
+    border: #ffffff solid 2px;
+    transition: all 0.2s ease;
+}
+
+#user-icon:hover {
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    border: #4a3333 solid 2px;
+    border-radius: 100px;
+    transition: all 0.2s ease;
+    background-color: #4A3333;
+    color: #fff;
 }
 
 .btn-entrar {
@@ -237,6 +269,11 @@ header>nav {
     color: #000;
 }
 
+.carousel-item {
+    transition: transform 0.5s ease-in-out !important;
+}
+
+
 
 /* ============== PELUCIAS ============== */
 
@@ -319,11 +356,20 @@ header>nav {
     font-size: 25px;
 }
 
+.btn:hover {
+    padding: 10px 20px;
+    border: #4A3333 solid 2px !important;
+    background-color: #ffffff !important;
+    font-weight: 600 !important;
+    color: #4A3333!important;
+}
+
 .carousel-buttons {
     display: flex;
     justify-content: center;
     margin-top: 20px;
     border: none;
+    color: #4A3333;
 }
 
 .carousel-buttons>button {

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Nuvell</title>
+    <link rel="stylesheet" href="assets/css/page/Perfil/perfil.css">
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/81389dc184.js" crossorigin="anonymous"></script>
+    <script src="assets/css/global/script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <!--=============== FLATICON ===============-->
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <a href="index.html" class="icon-logo">
+                <i class="fa-solid fa-paw"></i>
+                <h2> Nuvell</h2>
+            </a>
+
+            <section class="navbar-texto">
+                <a href="index.html">Início</a>
+                <a href="colecao.html">Coleções</a>
+            </section>
+
+            <div class="icons">
+                <a href="#"><i class="fa-solid fa-cart-shopping btn-compra"></i></a>
+                <a href="login.html"><button class="btn-entrar">Entrar</button></a>
+                <a href="perfil.html" id="user-icon" class="hidden"><i class="fa-solid fa-user"></i></a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <section class="perfil">
+        <div class="container">
+            <aside class="menu-lateral">
+                <p class="tab active" data-target="#pontuacao"><i class="fi fi-rs-settings-sliders"></i> Pontuação</p>
+                <p class="tab" data-target="#pedidos"><i class="fi fi-rs-shopping-bag"></i> Pedidos</p>
+                <p class="tab" data-target="#editar"><i class="fi fi-rs-user"></i> Editar Perfil</p>
+                <p class="tab" data-target="#endereco"><i class="fi fi-rs-marker"></i> Endereço</p>
+                <p class="tab" data-target="#senha"><i class="fi fi-rs-settings-sliders"></i> Mudar Senha</p>
+            </aside>
+
+            <div class="conteudo">
+                <div class="painel active" id="pontuacao">
+                    <h3>Olá, Usuário!</h3>
+                    <p>Você tem: <strong>100 pontos!</strong></p>
+                </div>
+
+                <div class="painel" id="pedidos">
+                    <h3>Meus pedidos</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Número</th>
+                                <th>Data</th>
+                                <th>Status</th>
+                                <th>Total</th>
+                                <th>Produtos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#1357</td>
+                                <td>19/03/2025</td>
+                                <td>Processando</td>
+                                <td>R$ 125,00</td>
+                                <td><a href="#">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>#2468</td>
+                                <td>29/06/2025</td>
+                                <td>Finalizado</td>
+                                <td>R$ 36,40</td>
+                                <td><a href="#">Ver</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="painel" id="editar">
+                    <h3>Editar Perfil</h3>
+                    <form>
+                        <input type="text" placeholder="Nome de usuário">
+                        <button>Salvar</button>
+                    </form>
+                </div>
+
+                <div class="painel" id="endereco">
+                    <h3>Meu Endereço</h3>
+                    <p>R. do Rosário, 1081 - Betim, MG</p>
+                    <a href="#">Editar</a>
+                </div>
+
+                <div class="painel" id="senha">
+                    <h3>Mudar Senha</h3>
+                    <form>
+                        <input type="password" placeholder="Senha atual">
+                        <input type="password" placeholder="Nova senha">
+                        <input type="password" placeholder="Confirmar senha">
+                        <button>Salvar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        document.querySelectorAll(".tab").forEach(tab => {
+            tab.addEventListener("click", () => {
+                document.querySelectorAll(".tab, .painel").forEach(el => el.classList.remove("active"));
+                tab.classList.add("active");
+                document.querySelector(tab.dataset.target).classList.add("active");
+            });
+        });
+
+    </script>
+</body>
