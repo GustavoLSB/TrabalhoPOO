@@ -319,10 +319,8 @@ header>nav {
     background-color: #fff;
     padding: 10px 0 0 50px;
     border: 1px solid #4A3333;
-    ;
     border-radius: 50px;
     width: 1219px;
-
 }
 
 .description-texto {
@@ -337,6 +335,15 @@ header>nav {
 }
 
 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 /*============== Cards ==============*/
 

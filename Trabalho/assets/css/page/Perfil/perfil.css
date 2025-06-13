@@ -5,6 +5,14 @@
 }
 
 
+body{
+    height: 100vh;
+    background-image: url('image/TelaColecao3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* ============== NAVBAR ============== */
 
 header {

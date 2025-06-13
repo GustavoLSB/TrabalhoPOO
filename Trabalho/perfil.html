@@ -59,7 +59,7 @@
             </aside>
 
             <div class="conteudo">
-        
+
 
                 <div class="painel" id="pedidos">
                     <h3>Meus pedidos</h3>
@@ -125,6 +125,27 @@
                 tab.classList.add("active");
                 document.querySelector(tab.dataset.target).classList.add("active");
             });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const tabs = document.querySelectorAll(".tab");
+            const panels = document.querySelectorAll(".painel");
+
+            tabs.forEach((tab, index) => {
+                tab.addEventListener("click", () => {
+                    // Remover a classe ativa de todas as abas e painéis
+                    tabs.forEach(t => t.classList.remove("active"));
+                    panels.forEach(p => p.classList.remove("active"));
+
+                    // Adicionar a classe ativa na aba clicada e no painel correspondente
+                    tab.classList.add("active");
+                    panels[index].classList.add("active");
+                });
+            });
+
+            // Definir um painel ativo por padrão ao carregar a página
+            tabs[0].classList.add("active");
+            panels[0].classList.add("active");
         });
 
     </script>
